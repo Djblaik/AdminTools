@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.ToggleButton?>
-<?import javafx.scene.effect.DropShadow?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.SVGPath?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
-<?import javafx.scene.web.WebView?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
 
-<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="650.0" prefWidth="973.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.admintools.gui.RconWindowController">
+<!--suppress JavaFxDefaultTag -->
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="650.0" prefWidth="973.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.admintools.gui.RconWindowController">
     <!---<stylesheets>
         <URL value="@../../../assets/themes/Default/style.css" />
     </stylesheets>-->
     <children>
         <AnchorPane fx:id="rconPane" layoutX="71.0" prefHeight="593.0" prefWidth="902.0" styleClass="rconPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
-                <TextField fx:id="rconSend" layoutX="14.0" layoutY="550.0" onAction="#send" prefHeight="29.0" prefWidth="405.0" styleClass="rconTextField" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="79.0" />
-                <Label fx:id="sendButton" layoutX="430.0" layoutY="552.0" onMouseClicked="#send" prefHeight="20.0" prefWidth="54.0" styleClass="rconButton" text="Send" textAlignment="CENTER" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="14.0">
+                <TextField fx:id="rconSend" layoutX="14.0" layoutY="550.0" onAction="#send" prefHeight="20.0" prefWidth="405.0" styleClass="rconTextField" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="79.0" />
+                <Label fx:id="sendButton" alignment="CENTER" contentDisplay="CENTER" layoutX="430.0" layoutY="552.0" onMouseClicked="#send" prefHeight="26.0" prefWidth="54.0" styleClass="rconButton" text="Send" textAlignment="CENTER" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="12.0">
                     <font>
                         <Font size="14.0" />
                     </font>

@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.ChoiceBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.RadioButton?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.Slider?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.ToggleButton?>
-<?import javafx.scene.effect.DropShadow?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.SVGPath?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" fx:id="rootPane" onKeyPressed="#onKeyPressed" prefHeight="650.0" prefWidth="973.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.admintools.gui.SettingsWindowController">
+<!--suppress JavaFxDefaultTag -->
+<AnchorPane id="AnchorPane" fx:id="rootPane" onKeyPressed="#onKeyPressed" prefHeight="650.0" prefWidth="973.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.admintools.gui.SettingsWindowController">
     <!---<stylesheets>
         <URL value="@../../../assets/themes/default/style.css" />
     </stylesheets>-->
@@ -28,16 +23,16 @@
                     <content>
                         <AnchorPane prefHeight="571.0" prefWidth="898.0" styleClass="sidePane">
                             <children>
-                                <AnchorPane layoutX="17.0" layoutY="17.0" prefHeight="550.0" prefWidth="869.0" styleClass="borderPane" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="16.0">
+                                <AnchorPane layoutX="17.0" layoutY="17.0" prefHeight="550.0" prefWidth="869.0" styleClass="borderPane" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
                                     <children>
-                                        <Label layoutX="807.0" layoutY="232.0" onMouseClicked="#apply" styleClass="labelButton" text="Apply" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="2.0" />
+                                        <Label layoutX="807.0" layoutY="232.0" onMouseClicked="#apply" styleClass="labelButton" text="Apply" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="12.0" />
                                         <Label layoutX="14.0" layoutY="18.0" styleClass="text" text="Server querry refresh rate - " AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="18.0" />
                                         <TextField fx:id="settingsQuerryRR" layoutX="184.0" layoutY="14.0" prefHeight="29.0" prefWidth="72.0" styleClass="rconTextField" AnchorPane.leftAnchor="184.0" AnchorPane.topAnchor="14.0" />
                                         <Label fx:id="sQRR" layoutX="272.0" layoutY="31.0" prefHeight="20.0" prefWidth="12.0" styleClass="text" text="s" AnchorPane.leftAnchor="271.0" AnchorPane.topAnchor="30.0" />
                                         <Label layoutX="15.0" layoutY="58.0" styleClass="text" text="Mojang api request rate - " AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="58.0" />
                                         <Slider fx:id="settingsApiRequestR" layoutX="177.0" layoutY="61.0" max="200.0" min="20.0" onMouseClicked="#refresh" onMouseMoved="#refresh" onMousePressed="#refresh" onMouseReleased="#refresh" value="100.0" />
                                         <Label fx:id="sARR" layoutX="327.0" layoutY="59.0" prefHeight="20.0" prefWidth="46.0" styleClass="text" text="s" AnchorPane.leftAnchor="327.0" AnchorPane.topAnchor="59.0" />
-                                        <Label layoutX="3.0" layoutY="244.0" onMouseClicked="#reset" styleClass="labelButton" text="Default" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" />
+                                        <Label layoutX="3.0" layoutY="244.0" onMouseClicked="#reset" styleClass="labelButton" text="Default" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="12.0" />
                                         <AnchorPane layoutX="14.0" layoutY="87.0" prefHeight="145.0" prefWidth="322.0" styleClass="borderPane" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="87.0">
                                             <children>
                                                 <Text layoutX="2.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="borderPaneText" text="Message system settings" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="0.0" />
